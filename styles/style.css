@@ -3,13 +3,3 @@
 @import url(./ultility/global-reset.css);
 @import url(./ultility/typograph.css);
 @import url(./ultility/colors.css);
-
-body {
-  background: var(--cor-6);
-}
-
-.testefont {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 12px;
-}
