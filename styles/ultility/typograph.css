@@ -1,0 +1,124 @@
+------------------------------------------------
+/*  -----------------FONTE ESTILO 1---------------- */
+/* ------------------------------------------------ */
+
+.font-1-pp-txt {
+  font: 400 0.75rem/1.35 "Great Vibes", sans-serif;
+}
+
+.font-1-p-txt {
+  font: 400 1rem/1.5 "Great Vibes", sans-serif;
+}
+
+.font-1-m-txt,
+.font-1-p-h1 {
+  font: 400 1.125rem/1.35 "Great Vibes", sans-serif;
+}
+
+.font-1-p-h1 {
+  font-weight: 600;
+}
+
+.font-1-g-txt {
+  font: 400 1.5rem/1.5 "Great Vibes", sans-serif;
+}
+
+.font-1-m-h1 {
+  font: 600 2rem/1.25 "Great Vibes", sans-serif;
+}
+
+.font-1-g-h1 {
+  font: 600 4rem/1.125 "Great Vibes", sans-serif;
+}
+
+/* ------------------------------------------------ */
+/*  ------------------FONTE ESTILO 2---------------- */
+/* ------------------------------------------------ */
+
+.font-2-p-txt {
+  font: 400 0.875rem/1.43 "Laila", sans-serif;
+}
+
+.font-2-m-txt {
+  font: 400 1rem/1.5 "Laila", sans-serif;
+}
+
+.font-2-p-h2 {
+  font: 500 1.125rem/1.35 "Laila", sans-serif;
+}
+
+.font-2-g-txt,
+.font-2-m-h2 {
+  font: 400 1.5rem/1.5 "Laila", sans-serif;
+}
+
+.font-2-m-h2 {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-2-g-h2 {
+  font: 500 2rem/1.25 "Laila", sans-serif;
+}
+
+/* ------------------------------------------------ */
+/*  ------------------FONTES RESONSIVAS---------------- */
+/* ------------------------------------------------ */
+
+/* Responsividade para Desktop padrão */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .font-1-g-h1 {
+    font-size: 3.5rem;
+  }
+  .font-2-g-txt,
+  .font-2-m-h2 {
+    font-size: 1.25rem;
+  }
+  .font-2-m-txt {
+    font-size: 1.125rem;
+  }
+}
+
+/* Responsividade para tablets */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .font-1-g-h1 {
+    font-size: 2.75rem;
+  }
+  .font-2-g-txt,
+  .font-2-m-h2 {
+    font-size: 1.25rem;
+  }
+  .font-2-g-txt {
+    margin-top: 1.125rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .font-1-g-h1 {
+    font-size: 2.5rem;
+  }
+  .font-2-g-txt,
+  .font-2-m-h2 {
+    font-size: 1.25rem;
+  }
+  .font-2-g-txt {
+    margin-top: 1.125rem;
+  }
+}
+
+/* Responsividade para tablet e celular em modo paisagem */
+@media screen and (min-width: 200px) and (max-width: 1024px) and (orientation: landscape) {
+  .font-1-g-h1 {
+    font-size: 2.5rem;
+  }
+  .font-2-g-txt,
+  .font-2-m-h2 {
+    font-size: 1.25rem;
+  }
+  .font-2-g-txt {
+    margin-top: 1.125rem;
+  }
+}

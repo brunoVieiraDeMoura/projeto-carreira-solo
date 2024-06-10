@@ -1,0 +1,97 @@
+/* ------------------------------------------------ */
+/*  -----------------MARGIN DE TEXTO---------------- */
+/* ------------------------------------------------ */
+
+.mrg-p-txt {
+  margin-top: 0.75rem;
+}
+.mrg-m-txt {
+  margin-top: 1.125rem;
+}
+.mrg-g-txt {
+  margin-top: 1.5rem;
+}
+
+/* ------------------------------------------------ */
+/*  -------------MARGIN DE ESPAÇAMENTO-------------- */
+/* ------------------------------------------------ */
+
+.mrg-pp {
+  margin-top: 0.375rem;
+}
+.mrg-p {
+  margin-top: 0.75rem;
+}
+.mrg-m {
+  margin-top: 1.5rem;
+}
+.mrg-g {
+  margin-top: 2.25rem;
+}
+.mrg-gg {
+  margin-top: 3rem;
+}
+.mrg-l {
+  margin-top: 4.5rem;
+}
+.mrg-xl {
+  margin-top: 9rem;
+}
+
+/* ------------------------------------------------ */
+/*  -----------------MEDIA QUERY---------------- */
+/* ------------------------------------------------ */
+
+/* Responsividade para Desktop atualizado */
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+}
+
+/* Responsividade para Desktop pouco + atualizado */
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  .mrg-g-txt {
+    margin-top: 1.125rem;
+  }
+}
+
+/* Responsividade para Desktop padrão */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .mrg-g-txt {
+    margin-top: 0.75rem;
+  }
+  .mrg-p-txt {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Responsividade para tablets */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .mrg-g-txt {
+    margin-top: 0.75rem;
+  }
+  .mrg-p-txt {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .mrg-g-txt {
+    margin-top: 0.75rem;
+  }
+  .mrg-p-txt {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Responsividade para tablet e celular em modo paisagem */
+@media screen and (min-width: 200px) and (max-width: 1024px) and (orientation: landscape) {
+  .mrg-g-txt {
+    margin-top: 0.75rem;
+  }
+  .mrg-p-txt {
+    margin-top: 0.5rem;
+  }
+}

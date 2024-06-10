@@ -1,0 +1,26 @@
+/* Responsividade para Desktop atualizado */
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+}
+
+/* Responsividade para Desktop pouco + atualizado */
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+}
+
+/* Responsividade para Desktop padrão */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+/* Responsividade para tablets */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+}
+
+/* Responsividade para celulares */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+}
+
+/* Responsividade para tablet e celular em modo paisagem */
+@media screen and (min-width: 200px) and (max-width: 1024px) and (orientation: landscape) {
+}
