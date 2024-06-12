@@ -1,0 +1,150 @@
+/* CONTAINER GERAL */
+.container-vh {
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: rebeccapurple;
+}
+
+/* CONTAINER HEADER */
+.header {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0vh;
+  width: 90%;
+  height: 6vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-bar ul {
+  display: flex;
+  color: var(--cor-2);
+  gap: 2.5rem;
+}
+.navigation-bar li {
+  transition-duration: 0.5s;
+}
+.navigation-bar .c {
+  display: none;
+}
+.c {
+  font-size: 2.5rem;
+  color: var(--cor-3);
+}
+
+.ativo {
+  color: var(--cor-p2);
+}
+.navigation-bar li:hover {
+  color: var(--cor-p2);
+}
+
+/* CONTAINER SECTION */
+.section {
+  position: absolute;
+  top: 6vh;
+  height: 90vh;
+  width: 90%;
+  display: grid;
+  justify-content: center;
+  background: rgba(31, 202, 31, 0.4);
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* PRIMEIRO CONTEUDO DA DIV */
+
+.first-div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first-div-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: red;
+}
+.first-div-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(230, 101, 122, 0.5);
+}
+
+/* SEGUNDO CONTEUDO DA DIV CAPTURA EMAIL */
+.get-data {
+  display: flex;
+  background: pink;
+  flex-wrap: wrap;
+  gap: 0px 24px;
+}
+.email-data {
+  display: flex;
+}
+.on-off {
+  display: none;
+}
+.txt-off {
+  display: none;
+}
+
+/* REDES SOCIAIS */
+
+.social-div {
+  margin-bottom: 32px;
+  width: 100%;
+  color: var(--cor-p0);
+  background: purple;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.social-div a:hover {
+  background: var(--cor-p0);
+  color: var(--cor-2);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.social-div a {
+  border: 2px solid var(--cor-p0);
+  padding: 8px;
+  border-radius: 100%;
+  transition-duration: 0.5s;
+}
+.social-div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOOOTER */
+
+.footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  bottom: 0vh;
+  height: 4vh;
+  color: white;
+  background: rgba(187, 17, 17, 0.5);
+}
+.footer p {
+  height: 2vh;
+}

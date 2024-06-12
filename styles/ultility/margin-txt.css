@@ -38,18 +38,22 @@
   margin-top: 9rem;
 }
 
+.mrg-xll {
+  margin-top: 12rem;
+}
+
 /* ------------------------------------------------ */
 /*  -----------------MEDIA QUERY---------------- */
 /* ------------------------------------------------ */
 
 /* Responsividade para Desktop atualizado */
 
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
+@media screen and (min-width: 1439px) and (max-width: 1921px) {
 }
 
 /* Responsividade para Desktop pouco + atualizado */
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
+@media screen and (min-width: 1281px) and (max-width: 1441px) {
   .mrg-g-txt {
     margin-top: 1.125rem;
   }
@@ -57,41 +61,109 @@
 
 /* Responsividade para Desktop padrão */
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1023px) and (max-width: 1281px) {
   .mrg-g-txt {
     margin-top: 0.75rem;
   }
   .mrg-p-txt {
     margin-top: 0.5rem;
+  }
+  .mrg-xl {
+    margin-top: 4rem;
+  }
+  .mrg-l {
+    margin-top: 0rem;
+  }
+  .mrg-xll {
+    margin-top: 9rem;
   }
 }
 
 /* Responsividade para tablets */
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1025px) {
   .mrg-g-txt {
     margin-top: 0.75rem;
   }
+  .mrg-g {
+    margin-top: 3.25rem;
+  }
   .mrg-p-txt {
     margin-top: 0.5rem;
+  }
+  .mrg-xl {
+    margin-top: 4rem;
+  }
+  .mrg-xll {
+    margin-top: 9rem;
+  }
+  .mrg-l {
+    margin-top: 2rem;
+  }
+  .mrg-m {
+    margin-top: 1rem;
   }
 }
 
 /* Responsividade para celulares */
-@media screen and (min-width: 200px) and (max-width: 767px) {
+@media screen and (min-width: 201px) and (max-width: 768px) {
   .mrg-g-txt {
     margin-top: 0.75rem;
   }
   .mrg-p-txt {
     margin-top: 0.5rem;
+  }
+  .mrg-l {
+    margin-top: 0rem;
+  }
+  .mrg-xll {
+    margin-top: 6rem;
+  }
+  .mrg-xl {
+    margin-top: 4rem;
   }
 }
 
+@media screen and (min-width: 381px) and (max-width: 411px) {
+  .mrg-xll {
+    margin-top: 6rem;
+  }
+  .mrg-m {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 381px) {
+  .mrg-xll {
+    margin-top: 2rem;
+  }
+  .mrg-xl {
+    margin-top: 1.5rem;
+  }
+  .mrg-m {
+    margin-top: 1rem;
+  }
+}
 /* Responsividade para tablet e celular em modo paisagem */
-@media screen and (min-width: 200px) and (max-width: 1024px) and (orientation: landscape) {
-  .mrg-g-txt {
+
+@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .mrg-xll {
+    margin-top: 2.5rem;
+  }
+  .mrg-xl {
+    margin-top: 0rem;
+  }
+  .mrg-m {
     margin-top: 0.75rem;
   }
-  .mrg-p-txt {
-    margin-top: 0.5rem;
+
+  .mrg-g-txt {
+    margin-top: px;
+  }
+}
+
+/* AIRPODS RESPONSIVE */
+@media screen and (min-height: 500px) and (max-height: 930px) and (max-width: 1921px) and (min-width: 1000px) {
+  .mrg-xll {
+    margin-top: 4rem;
   }
 }
