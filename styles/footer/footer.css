@@ -12,3 +12,42 @@
 .footer p {
   height: 2vh;
 }
+
+/* RESPONSIVIDADES */
+/* DESKTOP ATUALIZADO */
+@media screen and (min-width: 1441px) and (max-width: 1921px) {
+}
+
+/* DESKTOP E NOTEBOOK + MODERNO */
+@media screen and (min-width: 1281px) and (max-width: 1441px) {
+}
+
+/* DESKTOP PADRÃO */
+@media screen and (min-width: 1024px) and (max-width: 1281px) {
+}
+
+/* TABLETS */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+}
+
+/* MOBILE ATUAL */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+
+/* MOBILE PEQUENOS(ANTIGOS)*/
+@media screen and (min-width: 200px) and (max-width: 411px) {
+}
+
+/* TABLET E CELULAR LANDINGSCAPE */
+@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .footer {
+    height: 6vh;
+  }
+}
+
+/* AIRPAD */
+@media screen and (min-height: 1000px) and (max-height: 1440px) and (max-width: 1000px) {
+}

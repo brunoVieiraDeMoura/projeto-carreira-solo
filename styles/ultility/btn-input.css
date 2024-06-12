@@ -89,3 +89,75 @@ input[type="email"]:focus::placeholder {
 .txt-off {
   display: none;
 }
+
+/* RESPONSIVIDADES */
+
+/* DESKTOP ATUALIZADO */
+@media screen and (min-width: 1441px) and (max-width: 1921px) {
+}
+
+/* DESKTOP E NOTEBOOK + MODERNO */
+
+@media screen and (min-width: 1281px) and (max-width: 1441px) {
+}
+
+/* DESKTOP PADRÃO */
+@media screen and (min-width: 1024px) and (max-width: 1281px) {
+  .btn-div1 {
+    display: block;
+  }
+  .btn-div2 {
+    display: none;
+  }
+}
+
+/* TABLETS */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .btn-div1 {
+    display: block;
+  }
+  .btn-div2 {
+    display: none;
+  }
+}
+
+/* MOBILE ATUAL */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .btn-div1 {
+    display: block;
+  }
+  .btn-div2 {
+    display: none;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+}
+/* MOBILE PEQUENOS(ANTIGOS)*/
+@media screen and (min-width: 200px) and (max-width: 411px) {
+}
+
+/* TABLET E CELULAR LANDINGSCAPE */
+@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .btn-contact {
+    padding: 4px 0px;
+  }
+  .btn-email {
+    padding: 4px 0px;
+  }
+}
+
+/* AIRPAD */
+@media screen and (min-height: 1000px) and (max-height: 1440px) and (max-width: 1000px) {
+  .btn-contact {
+    width: 192px;
+    font-size: 1.25rem;
+    height: 48px;
+  }
+  .btn-email {
+    width: 192px;
+    width: 192px;
+    font-size: 1.25rem;
+    height: 48px;
+  }
+}

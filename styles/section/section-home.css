@@ -89,3 +89,122 @@
   justify-content: center;
   background: rgba(230, 101, 122, 0.5);
 }
+
+/* RESPONSIVIDADES */
+
+/* DESKTOP ATUALIZADO */
+@media screen and (min-width: 1441px) and (max-width: 1921px) {
+  .get-data {
+    height: 4.8vh;
+  }
+}
+
+/* DESKTOP E NOTEBOOK + MODERNO */
+@media screen and (min-width: 1281px) and (max-width: 1441px) {
+  .get-data {
+    height: 4.8vh;
+  }
+}
+
+/* DESKTOP PADRÃO */
+@media screen and (min-width: 1024px) and (max-width: 1281px) {
+  .on-off {
+    display: block;
+  }
+  .email-data {
+    margin-top: 1rem;
+  }
+}
+
+/* TABLETS */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+  .first-div {
+    max-width: 70%;
+  }
+  .first-div-right {
+    display: none;
+  }
+  .on-off {
+    display: block;
+  }
+  .get-data {
+    width: 86%;
+    flex-wrap: wrap;
+  }
+  .email-data {
+    margin-top: 1rem;
+  }
+  .social-div {
+    font-size: 24px;
+  }
+}
+
+/* MOBILE ATUAL */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+  .first-div {
+    grid-template-columns: 1fr;
+  }
+  .first-div-right {
+    display: none;
+  }
+  .on-off {
+    display: block;
+  }
+  .social-div {
+    font-size: 24px;
+  }
+  .email-data {
+    margin-top: 0.875rem;
+  }
+}
+
+/* MOBILE PEQUENOS(ANTIGOS)*/
+@media screen and (min-width: 200px) and (max-width: 411px) {
+  .social-div {
+    font-size: 20px;
+  }
+}
+
+/* TABLET E CELULAR LANDINGSCAPE */
+@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .on-off {
+    display: block;
+  }
+  .social-div {
+    font-size: 24px;
+  }
+  .on-off p {
+    display: none;
+  }
+  .txt-off {
+    display: block;
+  }
+  .txt-on {
+    display: none;
+  }
+  .social-div {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    gap: 64px;
+  }
+  .social-div a {
+    padding: 4px;
+    font-size: 18px;
+  }
+}
+
+/* AIRPAD */
+@media screen and (min-height: 1000px) and (max-height: 1440px) and (max-width: 1000px) {
+  .get-data {
+    width: 100%;
+  }
+  .social-div {
+    font-size: 36px;
+  }
+}
