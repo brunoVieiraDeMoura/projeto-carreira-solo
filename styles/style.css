@@ -8,3 +8,5 @@
 @import url(./ultility/media-responsive.css);
 /* SITE */
 @import url(./header/header.css);
+@import url(./footer/footer.css);
+@import url(./section/section-home.css);

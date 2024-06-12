@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0vh;
+  width: 90%;
+  height: 6vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-bar ul {
+  display: flex;
+  color: var(--cor-2);
+  gap: 2.5rem;
+}
+.navigation-bar li {
+  transition-duration: 0.5s;
+}
+.navigation-bar .c {
+  display: none;
+}
+.c {
+  font-size: 2.5rem;
+  color: var(--cor-3);
+}
+
+.ativo {
+  color: var(--cor-p2);
+}
+.navigation-bar li:hover {
+  color: var(--cor-p2);
+}
