@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
   top: 0vh;
   width: 90%;
   height: 6vh;

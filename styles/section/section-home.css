@@ -6,7 +6,7 @@
   width: 90%;
   display: grid;
   justify-content: center;
-  background: rgba(31, 202, 31, 0.4);
+  /* background: rgba(31, 202, 31, 0.4); */
 }
 .grid-section {
   display: grid;
@@ -25,13 +25,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: red;
+  /* background: red; */
 }
 
 /* CONTAINER SEGUNDA DIV */
 .get-data {
   display: flex;
-  background: pink;
+  /* background: pink; */
   flex-wrap: wrap;
   gap: 0px 24px;
 }
@@ -55,13 +55,12 @@
   margin-bottom: 32px;
   width: 100%;
   color: var(--cor-p0);
-  background: purple;
+  /* background: purple; */
   font-size: 24px;
   display: flex;
   align-items: center;
   gap: 36px;
   width: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .social-div a:hover {
   background: var(--cor-p0);
@@ -74,6 +73,7 @@
   padding: 8px;
   border-radius: 100%;
   transition-duration: 0.5s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .social-div i {
   display: flex;
@@ -87,7 +87,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(230, 101, 122, 0.5);
+  /* background: rgba(230, 101, 122, 0.5); */
 }
 
 /* RESPONSIVIDADES */
