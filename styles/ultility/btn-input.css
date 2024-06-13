@@ -21,8 +21,8 @@ input[type="email"]:hover {
 }
 input[type="email"]:focus {
   outline: none;
-  border: 2px solid var(--cor-p1);
-  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid var(--cor-p1);
+  background: rgba(255, 255, 255, 0.822);
   opacity: 1;
   font: var(--font-ph);
 }
@@ -32,10 +32,10 @@ input[type="email"]:focus::placeholder {
 
 .btn-contact {
   width: 144px;
-  background: linear-gradient(135deg, var(--cor-p0) 0%, var(--cor-p2) 100%);
-  border: 2px solid var(--cor-p1);
+  background: linear-gradient(135deg, var(--cor-p0) 80%, var(--cor-p1) 100%);
+  border: 2px solid var(--cor-p0);
   box-shadow: 2px;
-  color: var(--cor-2);
+  color: var(--cor-1);
   border-radius: 2px;
   text-align: center;
   text-decoration: none;
@@ -68,14 +68,14 @@ input[type="email"]:focus::placeholder {
   display: inline-block;
   font-size: 16px;
   padding: 8px 4px;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
   cursor: pointer;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-email:hover {
-  background: linear-gradient(135deg, var(--cor-p0) 0%, var(--cor-p2) 100%);
+  background: linear-gradient(135deg, var(--cor-p0) 80%, var(--cor-p1) 100%);
   border: 2px solid var(--cor-p1);
-  color: var(--cor-2);
+  color: var(--cor-1);
 }
 
 .btn-div1 {

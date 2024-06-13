@@ -63,7 +63,7 @@
   width: 100%;
 }
 .social-div a:hover {
-  background: var(--cor-p0);
+  background: linear-gradient(135deg, var(--cor-p0) 40%, var(--cor-p1) 100%);
   color: var(--cor-2);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
