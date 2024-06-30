@@ -1,0 +1,46 @@
+
+div esquerda part 1
+-------
+mrg-l
+font-1-g-h1
+-------
+mrg-p-txt
+font-2-g-txt
+-------botao
+mrg-m"
+/////////////////////////////////
+line margin 36 cima/baixo
+//////////
+div esquerda part 2
+----
+font-2-g-h2
+------
+font-1-p-txt
+mrg-pp
+-------botao
+mrg-m-txt
+
+
+.mrg-l : 4.5
+.mrg-p-txt : 0.75rem
+.mrg-m : 1.5rem
+.mrg-pp : 0.375rem;
+.mrg-m-txt : 1.125rem
+
+//nav
+.font-2-p-h2 : 1.125
+
+.font-1-g-h1 : 4 rem
+.font-2-g-txt : 1.5 rem
+
+.font-2-g-h2 : 2 rem
+.font-1-p-txt : 1 rem
+
+
+
+
+refazer mobile
+section
+
+txt-side
+.line 
