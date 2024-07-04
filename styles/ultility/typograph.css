@@ -1,5 +1,5 @@
 :root {
-  --font-ph: 400 0.875rem/1.5 "Nunito", sans-serif;
+  --font-ph: 400 0.875rem/1.5 "Roboto Condensed", sans-serif;
 }
 
 ------------------------------------------------
@@ -7,16 +7,16 @@
 /* ------------------------------------------------ */
 
 .font-1-pp-txt {
-  font: 400 0.75rem/1.35 "Montserrat", sans-serif;
+  font: 400 0.75rem/1.35 "Roboto Slab", sans-serif;
 }
 
 .font-1-p-txt {
-  font: 400 1rem/1.5 "Montserrat", sans-serif;
+  font: 400 1rem/1.5 "Roboto Slab", sans-serif;
 }
 
 .font-1-m-txt,
 .font-1-p-h1 {
-  font: 400 1.125rem/1.35 "Montserrat", sans-serif;
+  font: 400 1.125rem/1.35 "Roboto Slab", sans-serif;
 }
 
 .font-1-p-h1 {
@@ -24,15 +24,15 @@
 }
 
 .font-1-g-txt {
-  font: 400 1.5rem/1.5 "Montserrat", sans-serif;
+  font: 400 1.5rem/1.5 "Roboto Slab", sans-serif;
 }
 
 .font-1-m-h1 {
-  font: 600 2rem/1.25 "Montserrat", sans-serif;
+  font: 600 2rem/1.25 "Roboto Slab", sans-serif;
 }
 
 .font-1-g-h1 {
-  font: 600 4rem/1.125 "Montserrat", sans-serif;
+  font: 600 4rem/1.125 "Roboto Slab", sans-serif;
 }
 
 /* ------------------------------------------------ */
@@ -40,20 +40,20 @@
 /* ------------------------------------------------ */
 
 .font-2-p-txt {
-  font: 400 0.875rem/1.43 "Nunito", sans-serif;
+  font: 400 0.875rem/1.43 "Roboto Condensed", sans-serif;
 }
 
 .font-2-m-txt {
-  font: 400 1rem/1.5 "Nunito", sans-serif;
+  font: 400 1rem/1.5 "Roboto Condensed", sans-serif;
 }
 
 .font-2-p-h2 {
-  font: 500 1.125rem/1.35 "Nunito", sans-serif;
+  font: 500 1.125rem/1.35 "Roboto Condensed", sans-serif;
 }
 
 .font-2-g-txt,
 .font-2-m-h2 {
-  font: 400 1.5rem/1.5 "Nunito", sans-serif;
+  font: 400 1.5rem/1.5 "Roboto Condensed", sans-serif;
 }
 
 .font-2-m-h2 {
@@ -63,7 +63,7 @@
 }
 
 .font-2-g-h2 {
-  font: 500 2rem/1.25 "Nunito", sans-serif;
+  font: 600 2rem/1.25 "Roboto Condensed", sans-serif;
 }
 
 /* ------------------------------------------------ */
@@ -76,7 +76,7 @@
 
 /* Responsividade para Desktop pouco + atualizado */
 
-@media screen and (min-width: 1281px) and (max-width: 1441px) {
+@media screen and (min-width: 1180px) and (max-width: 1441px) {
   .font-1-g-h1 {
     font-size: 3.75rem;
   }
@@ -87,7 +87,7 @@
 
 /* Responsividade para Desktop padrão */
 
-@media screen and (min-width: 1023px) and (max-width: 1281px) {
+@media screen and (min-width: 1023px) and (max-width: 1181px) {
   .font-1-g-h1 {
     font-size: 3rem;
   }
@@ -96,6 +96,12 @@
   }
   .font-2-p-h2 {
     font-size: 1rem;
+  }
+  .font-1-p-h1 {
+    font-size: 1rem;
+  }
+  .font-1-m-txt {
+    font-size: 0.875rem;
   }
 }
 
@@ -113,6 +119,12 @@
   .font-2-p-h2 {
     font-size: 1rem;
   }
+  .font-1-p-h1 {
+    font-size: 1rem;
+  }
+  .font-1-m-txt {
+    font-size: 0.875rem;
+  }
 }
 
 /* Responsividade para celulares */
@@ -126,9 +138,21 @@
   .font-1-p-txt {
     font-size: 0.875rem;
   }
+  .font-1-p-h1 {
+    font-size: 0.875rem;
+  }
+  .font-1-m-txt {
+    font-size: 0.875rem;
+  }
 }
 
 @media screen and (min-width: 381px) and (max-width: 411px) {
+  .font-1-p-h1 {
+    font-size: 1rem;
+  }
+  .font-1-m-txt {
+    font-size: 0.875rem;
+  }
   .font-1-g-h1 {
     font-size: 2.5rem;
   }
@@ -141,6 +165,15 @@
 }
 
 @media screen and (min-width: 200px) and (max-width: 381px) {
+  .font-1-p-h1 {
+    font-size: 0.75rem;
+  }
+  .font-1-m-txt {
+    font-size: 0.75rem;
+  }
+  .font-1-m-h1 {
+    font-size: 1.5rem;
+  }
   .font-1-g-h1 {
     font-size: 2.25rem;
   }
@@ -153,9 +186,61 @@
 }
 /* Responsividade para tablet e celular em modo paisagem */
 
-@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+@media screen and (min-height: 401px) and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .font-1-g-h1 {
+    font-size: 1.875rem;
+  }
+  .font-2-g-txt {
+    font-size: 0.875rem;
+  }
+  .font-2-g-h2 {
+    font-size: 1.225rem;
+  }
+  .font-1-p-txt {
+    font-size: 0.75rem;
+  }
+  .font-2-p-txt {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .line {
+    display: none;
+  }
+}
+@media screen and (min-height: 0px) and (max-height: 402px) and (max-width: 990px) and (orientation: landscape) {
+  .font-1-g-h1 {
+    font-size: 1.75rem;
+  }
+  .font-2-g-txt {
+    font-size: 0.875rem;
+  }
+  .font-2-g-h2 {
+    font-size: 1.225rem;
+  }
+  .font-1-p-txt {
+    font-size: 0.75rem;
+  }
+  .font-2-p-txt {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .line {
+    display: none;
+  }
 }
 
 /* AIRPODS RESPONSIVE */
 @media screen and (min-height: 500px) and (max-height: 930px) and (max-width: 1921px) and (min-width: 1000px) {
+  .font-1-g-h1 {
+    font-size: 3rem;
+  }
+  .font-2-g-txt {
+    font-size: 1.125rem;
+  }
+  .font-1-p-txt {
+    font-size: 0.875rem;
+  }
+  .font-2-p-h2 {
+    font-size: 1rem;
+  }
 }

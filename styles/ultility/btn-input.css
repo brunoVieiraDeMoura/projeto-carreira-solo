@@ -1,40 +1,99 @@
-input[type="email"] {
-  min-width: 210px;
-  width: 50%;
+.form-container button {
+  width: 180px;
+  background: linear-gradient(135deg, var(--cor-s2) 40%, var(--cor-s1) 100%);
+  border: 2px solid var(--cor-s2);
+  box-shadow: 2px;
+  color: var(--cor-1);
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 4px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition-duration: 1s;
+  max-height: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.form-container button:hover {
   background: transparent;
-  border: 2px solid var(--cor-2);
-  font: var(--font-ph);
-  border-radius: 0px 6px 6px 0px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid var(--cor-1);
+  color: var(--cor-1);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-input[type="email"]::placeholder {
-  color: rgba(196, 196, 196, 0.781);
-  font: var(--font-ph);
+
+#alert {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  top: 10px;
+  z-index: 333;
+  gap: 6px;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    rgb(6, 36, 1),
+    rgba(9, 54, 22, 0.9),
+    rgb(6, 36, 1)
+  );
+
+  border-radius: 8px;
+  transform: translateY(-100%);
+  animation: slideDown 1s ease-out forwards;
 }
-input[type="email"]:hover {
-  outline: none;
-  border: 3px solid var(--cor-2);
-  background: rgba(255, 255, 255, 0.822);
-  opacity: 1;
-  font: var(--font-ph);
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-input[type="email"]:focus {
-  outline: none;
-  border: 3px solid var(--cor-2);
-  background: rgba(255, 255, 255, 0.822);
-  opacity: 1;
-  font: var(--font-ph);
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
-input[type="email"]:focus::placeholder {
-  color: rgba(65, 65, 65, 0.418);
+
+#alert p {
+  text-align: center;
+  justify-self: center;
+}
+#alert button {
+  position: absolute;
+  background: transparent;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  right: 0;
+  height: 100%;
+  width: 80px;
+}
+#alert i {
+  font-size: 32px;
+  color: var(--cor-4);
 }
 
 .btn-contact3 {
   display: inline-block;
   width: 120px;
   background: transparent;
-  border: 2px solid var(--cor-p0);
-  color: var(--cor-p0);
+  border: 2px solid var(--cor-s2);
+  color: var(--cor-s2);
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
@@ -53,8 +112,8 @@ input[type="email"]:focus::placeholder {
   gap: 24px;
 }
 .btn-contact3:hover {
-  background: linear-gradient(135deg, var(--cor-p0) 80%, var(--cor-p1) 100%);
-  border: 2px solid var(--cor-p0);
+  background: linear-gradient(135deg, var(--cor-s2) 80%, var(--cor-s1) 100%);
+  border: 2px solid var(--cor-s2);
   color: var(--cor-1);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -62,8 +121,8 @@ input[type="email"]:focus::placeholder {
 
 .btn-contact2 {
   width: 120px;
-  background: linear-gradient(135deg, var(--cor-s2) 80%, var(--cor-s1) 100%);
-  border: 2px solid var(--cor-s2);
+  background: linear-gradient(135deg, var(--cor-p0) 80%, var(--cor-p1) 100%);
+  border: 2px solid var(--cor-p0);
   box-shadow: 2px;
   color: var(--cor-1);
   border-radius: 6px;
@@ -82,8 +141,8 @@ input[type="email"]:focus::placeholder {
 
 .btn-contact2:hover {
   background: transparent;
-  border: 2px solid var(--cor-s2);
-  color: var(--cor-s2);
+  border: 2px solid var(--cor-p0);
+  color: var(--cor-p0);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -122,7 +181,7 @@ input[type="email"]:focus::placeholder {
   background: transparent;
   border: 2px solid var(--cor-2);
   color: var(--cor-1);
-  border-radius: 6px 0px 0px 6px;
+  border-radius: 6px;
   text-align: center;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -188,27 +247,111 @@ input[type="email"]:focus::placeholder {
 }
 
 /* MOBILE ATUAL */
-@media screen and (min-width: 200px) and (max-width: 767px) {
+@media screen and (min-width: 410px) and (max-width: 767px) {
+  #alert button {
+    position: relative;
+  }
+  #alert {
+    width: 90%;
+  }
 }
 /* MOBILE PEQUENOS(ANTIGOS)*/
 @media screen and (min-width: 200px) and (max-width: 411px) {
+  #alert {
+    width: 90%;
+    height: 48px;
+  }
+  #alert button {
+    position: relative;
+  }
+  .form-container button {
+    width: 120px;
+    padding: 4px;
+    font-weight: 400;
+  }
 }
 
 /* TABLET E CELULAR LANDINGSCAPE */
-@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+@media screen and (min-height: 401px) and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .header .btn-contact2 {
+    margin-top: 8px;
+  }
+  .header .btn-contact3 {
+    margin-top: 8px;
+  }
+  .btn-contact3 {
+    padding: 2px;
+  }
+  .btn-contact2 {
+    padding: 2px;
+  }
+  .btn-contact {
+    width: 122px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .btn-txt-off {
+    display: none;
+  }
+  .btn-email {
+    width: 122px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  input[type="email"] {
+    width: 70%;
+  }
+}
+@media screen and (min-height: 0px) and (max-height: 402px) and (max-width: 990px) and (orientation: landscape) {
+  .header .btn-contact2 {
+    margin-top: 8px;
+  }
+  .header .btn-contact3 {
+    margin-top: 8px;
+  }
+  .btn-contact3 {
+    padding: 2px;
+  }
+  .btn-contact2 {
+    padding: 2px;
+  }
+  .btn-contact {
+    width: 122px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .btn-txt-off {
+    display: none;
+  }
+  .btn-email {
+    width: 122px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  input[type="email"] {
+    width: 70%;
+  }
 }
 
 /* AIRPAD */
-@media screen and (min-height: 1000px) and (max-height: 1440px) and (max-width: 1000px) {
-  .btn-contact {
-    width: 192px;
-    font-size: 1.25rem;
-    height: 48px;
+@media screen and (min-height: 500px) and (max-height: 930px) and (max-width: 1921px) and (min-width: 1000px) {
+  .btn-contact3 {
+    padding: 4px;
   }
-  .btn-email {
-    width: 192px;
-    width: 192px;
-    font-size: 1.25rem;
-    height: 48px;
+  .btn-contact2 {
+    padding: 4px;
+  }
+  .btn-nav {
+    gap: 12px;
+  }
+  input[type="email"] {
+    width: 70%;
+  }
+  .line {
+    display: none;
   }
 }

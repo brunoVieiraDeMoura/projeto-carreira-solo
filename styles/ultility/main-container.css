@@ -9,6 +9,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   background: url(../../assets/background.jpg) no-repeat;
+  /* background: #25324a; */
   background-size: cover;
   background-position: center;
 }

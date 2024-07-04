@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../styles/style-inscrever.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <title>Carreira Solo</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+
+<body>
+  <!-- CONTAINER PRINCIPAL SEGURA VH100 -->
+  <div class="container-vh ">
+    <!-- EFEITO DO BACKGROUND NO MOBILE -->
+    <span class="bg-effect"></span>
+    <div id="alert">
+      <p class="font-1-p-h1 cor-1" id="firstAlertMessage">Lorem, ipsum dolor.</p>
+      <p class="cor-4 font-1-m-txt" id="alertMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus</p>
+      <button id="closeBtn">
+        <i class='bx bx-window-close'></i>
+      </button>
+    </div>
+    <!-- HEADER -->
+    <div class="bg-header">
+      <div class="header">
+        <!-- LOGO -->
+        <div class="logo-header"> <a class="left-mrg" href="/"><img id="img-2" src="../assets/logo-img.png" alt="">
+            <p id="#img-1" class="font-1-m-h1 cor-p0">Carreira<span class="cor-s2 solo">Solo</span></p>
+          </a></div>
+        <!-- NAVEGAÇÃO MENU -->
+        <nav class="navigation-bar font-2-p-h2">
+          <!-- ICONE MOBILE -->
+          <i class='bx bx-menu c'></i>
+          <!-- NAVEGAÇÃO DESKTOP -->
+          <ul class="d">
+            <li class="ativo"><a href="../index.html">Home</a></li>
+            <li class=""><a href="./projeto.html">Projeto</a></li>
+            <li class=""><a href="./sobre.html">Sobre</a></li>
+            <li class="d-off"><a href="./parceiros.html">Parceiros</a></li>
+          </ul>
+        </nav>
+        <div class="btn-nav d">
+          <a href="./inscrever.html" class="btn-contact3">Inscrever</a>
+          <a href="./contratar.html" class="btn-contact2">Contratar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COONTAINER SECTION -->
+    <div class="section">
+      <div class="grid-section mrg-l2">
+        <!-- DIV DO CONTAINER -->
+        <div class="first-div">
+          <div class="form-container font-2-p-h2 cor-3">
+            <h1 class="txt-h1 cor-1 font-1-m-h1">Formulário de <span class="cor-s2">Inscrição</span></h1>
+            <form id="emailForm" class="mrg-m cor-p5 font-1-m-txt">
+              <div class="div-1-form">
+                <label for="fullname">Nome Completo:</label>
+                <input class="" type="text" id="fullname" name="fullname" required>
+                <div class="container-div-1-form">
+                  <div class="">
+                    <label class="" for="email">E-mail:</label>
+                    <input class="mrg-p-txt" type="email" id="email" name="email" required>
+                  </div>
+                  <div class="mrg-p-txt">
+                    <label class="" for="phone">Telefone:</label>
+                    <input class="mrg-p-txt" type="tel" id="phone" name="phone" required>
+                  </div>
+                </div>
+                <label class="" for="address">Endereço:</label>
+                <input class="" type="text" id="address" name="address" required>
+              </div>
+              <div class="div-2-form mrg-p-txt">
+                <div class="div-2-form-relative">
+                  <span id="triangulo"></span>
+                  <label class="" for="interest">Área de Interesse Profissional:</label>
+                  <select class="" id="interest" name="interest" required>
+                    <option value="" id="dnone">Selecione uma opção</option>
+                    <option value="Cuidadora" required>Cuidadora</option>
+                    <option value="Barbearia" required>Barbearia</option>
+                    <option value="Salão de beleza" required>Salão de beleza</option>
+                    <option value="Manicure" required>Manicure</option>
+                    <option value="Marketing" required>Marketing</option>
+                    <option value="Outro" required>Outro</option>
+                  </select>
+                </div>
+                <label class="" for="expectations">Expectativas e Objetivos com o Programa:</label>
+                <textarea class="" id="expectations" name="expectations" rows="4" required></textarea>
+              </div>
+              <button class="mrg-m-txt" type="submit">Inscrever-se</button>
+              <p id="error-message" class="error"></p>
+            </form>
+          </div>
+          <!-- REDES SOCIAIS -->
+          <div class="social-div mrg-xl">
+            <a href="https://wa.me/558791874160?text=Olá%20queria%20saber%20um%20pouco%20mais%20sobre%20o%20projeto%20Carreira%20Solo.">
+              <i class='bx bxl-whatsapp'></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+              <i class='bx bxl-facebook'></i>
+            </a>
+          </div>
+        </div>
+        <!-- ESPAÇO DIV LADO DIREITO -->
+        <div class="first-div-right cor-s2">
+          <div class="container-right">
+            <h1 class="font-1-g-h1 cor-0"><span class="cor-s2">Inscreva-se</span> ipsum dol.</h1>
+            <p class="font-2-g-txt cor-0 mrg-g-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis itaque qui blanditiis velit unde, quod deserunt ratione dolores sint ipsa suscipit nisi eveniet,</p>
+            <img class="mrg-m" src="../assets/img-section/imagem-1.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- FOOTER COPY -->
+    <footer class="footer font-2-p-txt">
+      <p><span class="cor-s2">Carreira Solo</span> © Copyright 2024 Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="../script/comum.js"></script>
+  <script type="text/javascript" src="../script/javascript-inscrever.js"></script>
+
+</body>
+
+</html>

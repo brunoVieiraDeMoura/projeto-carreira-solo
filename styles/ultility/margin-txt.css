@@ -34,6 +34,9 @@
 .mrg-l {
   margin-top: 4.5rem;
 }
+.mrg-l2 {
+  margin-top: 4.5rem;
+}
 .mrg-xl {
   margin-top: 9rem;
 }
@@ -70,20 +73,33 @@
 
 /* Responsividade para celulares */
 @media screen and (min-width: 201px) and (max-width: 768px) {
+  .mrg-l2 {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (min-width: 381px) and (max-width: 411px) {
   .mrg-l {
     margin-top: 2.5rem;
   }
+  .mrg-l2 {
+    margin-top: 0px;
+  }
+
   .mrg-data {
     margin-top: 2rem;
   }
+  .mrg-g {
+    margin-top: 1rem;
+  }
 }
 
-@media screen and (min-width: 200px) and (max-width: 381px) {
+@media screen and (min-width: 0px) and (max-width: 381px) {
   .mrg-l {
     margin-top: 2rem;
+  }
+  .mrg-l2 {
+    margin-top: 0px;
   }
   .mrg-data {
     margin-top: 2rem;
@@ -91,12 +107,68 @@
   .mrg-m {
     margin-top: 1rem;
   }
+  .mrg-p-txt {
+    margin-top: 0.25rem;
+  }
+  .mrg-g {
+    margin-top: 1rem;
+  }
 }
 /* Responsividade para tablet e celular em modo paisagem */
 
-@media screen and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+@media screen and (min-height: 401px) and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .mrg-l {
+    margin-top: 1.875rem;
+  }
+  .mrg-l2 {
+    margin-top: 1.875rem;
+  }
+  .mrg-p-txt {
+    margin-top: 0px;
+  }
+  .mrg-m {
+    margin-top: 8px;
+  }
+  .mrg-data {
+    margin-top: 1rem;
+  }
+  .mrg-pp {
+    margin-top: 0px;
+  }
+  .mrg-m-txt {
+    margin-top: 0px;
+  }
+  .mrg-g {
+    margin-top: 0px;
+  }
+
+  /* DAQUI PARA CIMA */
+}
+
+@media screen and (min-height: 0px) and (max-height: 402px) and (max-width: 990px) and (orientation: landscape) {
+  .mrg-l {
+    margin-top: 1.875rem;
+  }
+  .mrg-l2 {
+    margin-top: 1.875rem;
+  }
+  .mrg-p-txt {
+    margin-top: 0px;
+  }
+  .mrg-m {
+    margin-top: 8px;
+  }
+  .mrg-data {
+    margin-top: 0.5rem;
+  }
+  .mrg-pp {
+    margin-top: 0px;
+  }
 }
 
 /* AIRPODS RESPONSIVE */
 @media screen and (min-height: 500px) and (max-height: 930px) and (max-width: 1921px) and (min-width: 1000px) {
+  .mrg-data {
+    margin-top: 2rem;
+  }
 }

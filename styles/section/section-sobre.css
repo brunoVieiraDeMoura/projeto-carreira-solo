@@ -33,12 +33,11 @@
 
 /* divisória */
 .line {
-  /* align-self: center; */
   content: "";
-  width: 90%;
-  height: 4px;
+  width: 100%;
+  height: 2px;
   background: var(--cor-p1);
-  opacity: 0.1;
+  opacity: 0.5;
   margin: 36px 0px;
 }
 /* CONTAINER SEGUNDA DIV */
@@ -188,7 +187,19 @@
     background-position: 80% 50%;
     z-index: 1;
   }
-
+  .bg-effect {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      120deg,
+      rgba(27, 162, 224, 0.4),
+      rgb(0, 0, 0, 0.1)
+    );
+  }
   .line {
     display: none;
   }
@@ -233,8 +244,8 @@
     top: 0;
     left: 0;
     background: linear-gradient(
-      90deg,
-      rgba(37, 50, 74, 0.6) 30%,
+      120deg,
+      rgba(27, 162, 224, 0.6),
       rgb(0, 0, 0, 0.6)
     );
   }
@@ -285,8 +296,8 @@
     top: 0;
     left: 0;
     background: linear-gradient(
-      90deg,
-      rgba(37, 50, 74, 0.6) 30%,
+      120deg,
+      rgba(27, 162, 224, 0.6),
       rgb(0, 0, 0, 0.6)
     );
   }
