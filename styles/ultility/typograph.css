@@ -135,6 +135,9 @@
   .font-2-g-txt {
     font-size: 1.125rem;
   }
+  .font-2-g-txt1 {
+    font-size: 1rem;
+  }
   .font-1-p-txt {
     font-size: 0.875rem;
   }
@@ -150,6 +153,7 @@
   .font-1-p-h1 {
     font-size: 1rem;
   }
+
   .font-1-m-txt {
     font-size: 0.875rem;
   }
@@ -160,6 +164,9 @@
     font-size: 1.125rem;
   }
   .font-1-p-txt {
+    font-size: 0.875rem;
+  }
+  .font-2-g-txt1 {
     font-size: 0.875rem;
   }
 }
@@ -181,6 +188,9 @@
     font-size: 1rem;
   }
   .font-1-p-txt {
+    font-size: 0.875rem;
+  }
+  .font-2-g-txt1 {
     font-size: 0.875rem;
   }
 }
@@ -208,6 +218,9 @@
   }
 }
 @media screen and (min-height: 0px) and (max-height: 402px) and (max-width: 990px) and (orientation: landscape) {
+  .font-2-m-h2 {
+    font-size: 1rem;
+  }
   .font-1-g-h1 {
     font-size: 1.75rem;
   }

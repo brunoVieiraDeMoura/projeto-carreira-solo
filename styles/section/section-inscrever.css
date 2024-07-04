@@ -135,16 +135,7 @@ input[type="radio"] {
   align-items: center;
   gap: 24px;
 }
-#tipo {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin-bottom: 10px;
-}
-#tipo input {
-  width: auto;
-  margin-right: 5px;
-}
+
 .text-label {
   text-align: center;
 }
@@ -524,11 +515,70 @@ input[type="radio"] {
     padding: 4px;
     font-size: 18px;
   }
-  .first-div {
-    max-width: 100%;
-  }
 
   /* FORM PARA MOBILE LAND */
+  .form-container {
+    padding: 8px;
+  }
+
+  #emailForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 20px;
+  }
+  #emailForm button {
+    margin-left: 80%;
+  }
+  .first-div {
+    width: 100%;
+  }
+
+  .div-1-form {
+    display: grid;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .container-div-1-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .div-2-form {
+    display: grid;
+    gap: 0.4rem;
+    width: 100%;
+  }
+
+  /* var(--cor-s2) */
+  .order-1 {
+    display: grid;
+    justify-content: start;
+    gap: 20px;
+    grid-row-start: 2;
+  }
+  .order-2 {
+    grid-row-start: 1;
+  }
+  .form-container textarea {
+    height: 50px;
+  }
+  .div-1-form {
+    grid-column-start: 1;
+    grid-row: 1;
+  }
+  .div-2-form {
+    grid-column-start: 2;
+    grid-row: 1;
+  }
+  .form-container {
+    background: linear-gradient(
+      135deg,
+      rgba(27, 162, 224, 0.2),
+      rgb(0, 0, 0, 0.6) 50%
+    );
+  }
+  /* DAQUI PARA CIMA */
 }
 
 /* AIRPAD */

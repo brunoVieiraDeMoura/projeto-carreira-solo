@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const interestId = document.getElementById("interest");
   function checkMediaQuery() {
     const midiaQueryLandingScape = window.matchMedia(
-      "screen and (min-height: 0px) and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) , screen and (min-width: 410px) and (max-width: 767px)"
+      "screen and (min-height: 0px) and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) , screen and (min-width: 0px) and (max-width: 767px)"
     );
     const triangulo = document.getElementById("triangulo");
     console.log(midiaQueryLandingScape);

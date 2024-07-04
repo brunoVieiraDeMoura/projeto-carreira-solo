@@ -76,6 +76,12 @@
   .mrg-l2 {
     margin-top: 0px;
   }
+  .mrg-l1 {
+    margin-top: 3rem;
+  }
+  .mrg-g1 {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 381px) and (max-width: 411px) {
@@ -158,10 +164,16 @@
   .mrg-m {
     margin-top: 8px;
   }
+  .mrg-m1 {
+    margin-top: 0px;
+  }
   .mrg-data {
     margin-top: 0.5rem;
   }
   .mrg-pp {
+    margin-top: 0px;
+  }
+  .mrg-m-txt {
     margin-top: 0px;
   }
 }
