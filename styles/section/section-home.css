@@ -240,8 +240,7 @@
     );
   }
   .line {
-    width: 20%;
-    opacity: 0.4;
+    display: none;
   }
 
   /* ACIMA CORRIGIDO */
@@ -304,7 +303,7 @@
     flex-wrap: wrap;
   }
   .social-div {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 

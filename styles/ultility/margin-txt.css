@@ -72,7 +72,7 @@
 }
 
 /* Responsividade para celulares */
-@media screen and (min-width: 201px) and (max-width: 768px) {
+@media screen and (min-width: 410px) and (max-width: 768px) {
   .mrg-l2 {
     margin-top: 0px;
   }
@@ -81,6 +81,9 @@
   }
   .mrg-g1 {
     margin-top: 1rem;
+  }
+  .mrg-data {
+    margin-top: 2rem;
   }
 }
 
@@ -108,7 +111,7 @@
     margin-top: 0px;
   }
   .mrg-data {
-    margin-top: 2rem;
+    margin-top: 0.75rem;
   }
   .mrg-m {
     margin-top: 1rem;
