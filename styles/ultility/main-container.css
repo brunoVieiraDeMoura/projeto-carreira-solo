@@ -2,14 +2,11 @@
 .container-vh {
   position: relative;
   height: 100vh;
-  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
   background: url(../../assets/background.jpg) no-repeat;
-  /* background: #25324a; */
   background-size: cover;
   background-position: center;
 }

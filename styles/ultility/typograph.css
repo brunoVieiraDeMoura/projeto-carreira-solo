@@ -9,6 +9,9 @@
 .font-1-pp-txt {
   font: 400 0.75rem/1.35 "Roboto Slab", sans-serif;
 }
+.fw-b {
+  font-weight: 600;
+}
 
 .font-1-p-txt {
   font: 400 1rem/1.5 "Roboto Slab", sans-serif;
@@ -28,6 +31,9 @@
 }
 
 .font-1-m-h1 {
+  font: 600 2rem/1.25 "Roboto Slab", sans-serif;
+}
+.font-1-m-h11 {
   font: 600 2rem/1.25 "Roboto Slab", sans-serif;
 }
 
@@ -100,9 +106,6 @@
   .font-1-p-h1 {
     font-size: 1rem;
   }
-  .font-1-m-txt {
-    font-size: 0.875rem;
-  }
 }
 
 /* Responsividade para tablets */
@@ -121,9 +124,6 @@
   }
   .font-1-p-h1 {
     font-size: 1rem;
-  }
-  .font-1-m-txt {
-    font-size: 0.875rem;
   }
 }
 
@@ -144,8 +144,8 @@
   .font-1-p-h1 {
     font-size: 0.875rem;
   }
-  .font-1-m-txt {
-    font-size: 0.875rem;
+  .font-1-m-h1 {
+    font-size: 1.5rem;
   }
 }
 

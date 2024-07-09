@@ -38,7 +38,7 @@
   margin-top: 4.5rem;
 }
 .mrg-xl {
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 
 .mrg-xll {
@@ -85,6 +85,9 @@
   .mrg-data {
     margin-top: 2rem;
   }
+  .mrg-g-txt {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 381px) and (max-width: 411px) {
@@ -101,9 +104,15 @@
   .mrg-g {
     margin-top: 1rem;
   }
+  .mrg-g-txt {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 381px) {
+  .mrg-g-txt {
+    margin-top: 1rem;
+  }
   .mrg-l {
     margin-top: 2rem;
   }
@@ -122,10 +131,16 @@
   .mrg-g {
     margin-top: 1rem;
   }
+  .mrg-xl {
+    margin-top: 3rem;
+  }
 }
 /* Responsividade para tablet e celular em modo paisagem */
 
 @media screen and (min-height: 401px) and (max-height: 500px) and (max-width: 990px) and (orientation: landscape) {
+  .mrg-xl {
+    margin-top: 4rem;
+  }
   .mrg-l {
     margin-top: 1.875rem;
   }
@@ -155,6 +170,9 @@
 }
 
 @media screen and (min-height: 0px) and (max-height: 402px) and (max-width: 990px) and (orientation: landscape) {
+  .mrg-xl {
+    margin-top: 2.5rem;
+  }
   .mrg-l {
     margin-top: 1.875rem;
   }

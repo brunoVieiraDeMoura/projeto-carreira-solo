@@ -1,52 +1,96 @@
-/* CONTAINER SECTION */
 .section {
-  position: absolute;
-  top: 6vh;
-  height: 90vh;
+  position: relative;
+  height: calc(100vh - 6vh);
   width: 90%;
   display: grid;
-  justify-content: center;
+  /* justify-content: center; */
   /* background: rgba(31, 202, 31, 0.4); */
 }
 .grid-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 0px 48px;
   margin-bottom: 40px;
-}
-
-/* div-lado esquerdo container */
-.first-div {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 32px;
   /* background: green; */
 }
-
-/* GRID DA DIREITA */
+.first-div {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  max-height: 100%;
+  /* background: red; */
+}
+.first-div-left {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .first-div-right {
   position: relative;
   display: grid;
   align-items: center;
-  justify-content: center;
-  border-radius: 32px;
   grid-template-columns: 1fr;
-  background: url(../../assets/img-section/imagem-3.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.txt-main-project {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 12px;
+}
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+.slides {
+  position: absolute;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+.slides img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.first-div-right button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(2, 23, 29, 0.4);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 100%;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 /* REDES SOCIAIS CONTAINER*/
 
 .social-div {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   color: var(--cor-2);
   /* background: purple; */
@@ -88,24 +132,28 @@
 
 /* DESKTOP PADRÃO */
 @media screen and (min-width: 1024px) and (max-width: 1281px) {
+  .slides {
+    width: auto;
+    height: 100%;
+  }
 }
 
 /* TABLETS */
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  .container-vh {
-    background: url(../../assets/background-mobile-min.jpg), no-repeat;
-    background-size: cover;
-    background-position: 80% 50%;
-    z-index: 1;
-  }
-  .first-div {
-    max-width: 62%;
+  .slides {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
   }
   .first-div-right {
-    display: none;
+    max-height: 50%;
+    margin-bottom: 40px;
   }
   .grid-section {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px 0px;
   }
   .social-div {
     font-size: 24px;
@@ -114,11 +162,20 @@
 
 /* MOBILE ATUAL */
 @media screen and (min-width: 412px) and (max-width: 767px) {
-  .container-vh {
-    background: url(../../assets/background-mobile-min.jpg), no-repeat;
-    background-size: cover;
-    background-position: 80% 50%;
-    z-index: 1;
+  .slides {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+  }
+  .first-div-right {
+    max-height: 50%;
+    margin-bottom: 40px;
+  }
+  .grid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px 0px;
   }
   .bg-effect {
     content: "";
@@ -139,9 +196,7 @@
   .first-div {
     grid-template-columns: 1fr;
   }
-  .first-div-right {
-    display: none;
-  }
+
   .social-div {
     font-size: 24px;
   }
@@ -149,11 +204,20 @@
 
 /* MOBILE PEQUENOS(ANTIGOS)*/
 @media screen and (min-width: 0px) and (max-width: 411px) {
-  .container-vh {
-    background: url(../../assets/background-mobile-min.jpg), no-repeat;
-    background-size: cover;
-    background-position: 80% 50%;
-    z-index: 1;
+  .slides {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+  }
+  .first-div-right {
+    max-height: 50%;
+    margin-bottom: 24px;
+  }
+  .grid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px 0px;
   }
   .bg-effect {
     content: "";
@@ -170,9 +234,6 @@
   }
   .grid-section {
     grid-template-columns: 1fr;
-  }
-  .first-div-right {
-    display: none;
   }
   .social-div {
     font-size: 20px;
@@ -187,6 +248,14 @@
   .social-div a {
     padding: 4px;
     font-size: 18px;
+  }
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .first-div-right {
+    max-height: 100%;
+    margin-bottom: 24px;
   }
 
   /* DAQUI PARA CIMA */

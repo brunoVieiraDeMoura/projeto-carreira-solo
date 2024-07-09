@@ -164,21 +164,22 @@
         </nav>
         <div class="btn-nav d">
           <a href="../paginas/inscrever.html" class="btn-contact3">Inscrever</a>
-          <a href="../paginas/contratar.html" class="btn-contact2">Contratar</a>
+          <a href="https://apoia.se/" class="btn-contact2">Doações</a>
         </div>
       </div>
     </div>
     <!-- COONTAINER SECTION -->
     <div class="section">
-      <div class="grid-section mrg-l">
+      <div class="grid-section mrg-xl">
         <!-- DIV DO CONTAINER -->
         <div class="first-div">
-          <!-- PRIMEIRA DIV LADO ESQUERDO -->
-          <h1 class="font-1-g-h1 cor-1"><span class="cor-s2">Falta texto</span> Sobre oProjeto</h1>
-          <p class="font-2-g-txt cor-2"><span class="cor-s2">criar um texto aqui .</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo rerum beatae sint est laboriosam reprehenderit officia quidem, inventore in enim tenetur fugiat cumque. Fugiat hic, quos corporis minus rerum fuga laudantium dolores?</p>
-
-          <!-- GET INFO -PUSH CLIENT -->
-
+          <div class="first-div-left">
+            <div class="txt-main-project">
+              <h1 id="txt12" class="font-1-g-h1 cor-s2"></h1>
+              <h1 id="slider-title" class="font-1-g-h1 cor-2"></h1>
+            </div>
+          </div>
+          <p id="slider-description" class="font-2-g-txt cor-4 mrg-g-txt"></p>
           <!-- REDES SOCIAIS -->
           <div class="social-div mrg-xl">
             <a href="https://wa.me/558791874160?text=Olá%20queria%20saber%20um%20pouco%20mais%20sobre%20o%20projeto%20Carreira%20Solo.">
@@ -194,10 +195,23 @@
         </div>
         <!-- ESPAÇO DIV LADO DIREITO -->
         <div class="first-div-right">
-          <figure class="gallery-item item-1"> </figure>
-          <figure class="gallery-item item-2"> </figure>
-          <figure class="gallery-item item-3"> </figure>
-          <figure class="gallery-item item-4"> </figure>
+          <div class="slider">
+            <div class="slides">
+              <img src="../assets/slide/8.jpg" alt="Image 8">
+              <img class="active" src="../assets/slide/1.jpg" alt="Image 1">
+              <img src="../assets/slide/2.jpg" alt="Image 2">
+              <img src="../assets/slide/3.jpg" alt="Image 3">
+              <img src="../assets/slide/4.jpg" alt="Image 4">
+              <img src="../assets/slide/5.jpg" alt="Image 5">
+              <img src="../assets/slide/6.jpg" alt="Image 6">
+              <img src="../assets/slide/7.jpg" alt="Image 7">
+              <img src="../assets/slide/8.jpg" alt="Image 8">
+              <img src="../assets/slide/1.jpg" alt="Image 1">
+            </div>
+          </div>
+          <!-- Botões de Navegação -->
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
       </div>
 
@@ -208,6 +222,7 @@
     </footer>
   </div>
   <script type="text/javascript" src="../script/menu-mobile.js"></script>
+  <script type="text/javascript" src="../script/slide-projeto.js"></script>
 </body>
 
 </html>

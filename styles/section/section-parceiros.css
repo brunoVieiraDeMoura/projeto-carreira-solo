@@ -1,20 +1,27 @@
 /* CONTAINER SECTION */
 .section {
-  position: absolute;
-  top: 6vh;
-  height: 90vh;
+  position: relative;
+  height: calc(100vh - 6vh);
   width: 90%;
   display: grid;
   justify-content: center;
   /* background: rgba(31, 202, 31, 0.4); */
 }
+
 .grid-section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 40px;
+}
+.first-div {
+  position: relative;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  /* background: red; */
+  height: 100%;
+  width: 100%;
 }
 
 .div-central {
@@ -51,8 +58,7 @@
 
 .social-div {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   color: var(--cor-2);
   /* background: purple; */

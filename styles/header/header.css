@@ -2,7 +2,7 @@
   position: absolute;
   width: 90%;
   margin: 0px 5%;
-  height: 6vh;
+  height: calc(100vh - 94vh);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
